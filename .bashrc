@@ -45,7 +45,7 @@ export PROMPT_COMMAND
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
-eval $(dircolors -b ~/devops/dircolors-solarized/dircolors.256dark)
+eval $(dircolors -b ~/dev-environment/dircolors-solarized/dircolors.256dark)
 
 ## rbenv
 
