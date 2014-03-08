@@ -1,9 +1,12 @@
 [submodule "solarized"]
 	path = solarized
 	url = https://github.com/altercation/solarized
+	branch = master
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
+	branch = master
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
+	branch = master
