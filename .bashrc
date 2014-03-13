@@ -23,7 +23,8 @@ which () {
 export -f which
 
 PS1='\w$(__git_ps1 " (%s)") $ '
-export GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWDIRTYSTATE=1
+GIT_PS1_SHOWSTASHSTATE=1
 
 shopt -s cdspell
 shopt -s cdable_vars
