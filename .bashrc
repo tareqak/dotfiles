@@ -47,24 +47,4 @@ alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
 eval $(dircolors -b ~/dev-environment/dircolors-solarized/dircolors.256dark)
-
-## rbenv
-
-export PATH="/Users/tareq/.rbenv/shims:${PATH}"
-source "/usr/local/Cellar/rbenv/0.4.0/libexec/../completions/rbenv.bash"
-
-rbenv() {
-  typeset command
-  command="$1"
-  if [ "$#" -gt 0 ]; then
-    shift
-  fi
-
-  case "$command" in
-  rehash|shell)
-    eval `rbenv "sh-$command" "$@"`;;
-  *)
-    command rbenv "$command" "$@";;
-  esac
-}
 # vim: set tw=0:
