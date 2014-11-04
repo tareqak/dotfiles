@@ -1,8 +1,7 @@
 PATH="$PATH"
-PATH="/usr/local/texlive/2013/bin/x86_64-darwin:$PATH"
-PATH="~/bin:$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="~/bin:$PATH"
 export PATH
 
 MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
@@ -11,16 +10,9 @@ export MANPATH
 
 export HOMEBREW_EDITOR="/usr/local/bin/vim"
 
-
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
     . /usr/local/share/bash-completion/bash_completion
 fi
-
-which () {
-  (alias; declare -f) | /usr/local/bin/gwhich --tty-only --read-alias\
-    --read-functions --show-tilde --show-dot $@
-}
-export -f which
 
 PS1='\w$(__git_ps1 " (%s)") $ '
 GIT_PS1_SHOWDIRTYSTATE=1
