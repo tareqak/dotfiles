@@ -1,2 +1,2 @@
-dev-environment
+dotfiles
 ===============
