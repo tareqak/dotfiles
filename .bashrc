@@ -38,5 +38,5 @@ export PROMPT_COMMAND
 alias ls="ls --color=auto"
 alias grep="grep --color=auto"
 
-eval $(dircolors -b ~/dev-environment/dircolors-solarized/dircolors.256dark)
+eval $(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)
 # vim: set tw=0:
