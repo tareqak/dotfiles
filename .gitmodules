@@ -10,3 +10,7 @@
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
 	branch = master
+[submodule "zsh-syntax-highlighting"]
+	path = zsh-syntax-highlighting
+	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
+	branch = master
