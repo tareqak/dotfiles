@@ -8,7 +8,7 @@ MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
 MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
 export MANPATH
 
-export HOMEBREW_EDITOR="/usr/local/bin/vim"
+export EDITOR="/usr/local/bin/vim"
 
 if [ -f /usr/local/share/bash-completion/bash_completion ]; then
     . /usr/local/share/bash-completion/bash_completion
@@ -35,7 +35,7 @@ shopt -s histappend histreedit histverify
 PROMPT_COMMAND="history -n; history -w; history -c; history -r;$PROMPT_COMMAND"
 export PROMPT_COMMAND
 
-alias ls="ls --color=auto"
+alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 
 eval $(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)

@@ -38,7 +38,7 @@ au BufNewFile * set fileformat=unix encoding=utf-8
 autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 set backspace=indent,eol,start
-set shell=/usr/local/bin/bash
+set shell=/usr/local/bin/zsh
 
 " set hidden
 set switchbuf=usetab,newtab
