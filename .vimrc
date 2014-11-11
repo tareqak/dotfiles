@@ -94,6 +94,9 @@ nmap <silent> <S-Right> :wincmd l<CR>
 
 set clipboard=unnamed
 
+" For vim-airline
+set laststatus=2
+
 "nmap <F8> :TagbarToggle<CR>
 
 nnoremap <leader>a= :Tabularize /=<CR>
