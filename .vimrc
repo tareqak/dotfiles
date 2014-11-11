@@ -106,8 +106,8 @@ vnoremap <leader>a: :Tabularize /:\zs<CR>
 
 map <leader>n <plug>NERDTreeTabsToggle<CR>
 
-let g:syntastic_auto_loc_list       = 1
-let g:syntastic_check_on_open       = 1
+let g:syntastic_auto_loc_list = 1
+let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
 
