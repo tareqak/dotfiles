@@ -16,7 +16,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
-Plugin 'wincent/Command-T'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
@@ -120,6 +119,4 @@ let g:ycm_confirm_extra_conf = 0
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "solarized"
 let g:airline#extensions#tabline#enabled = 1
-
-let g:CommandTMaxHeight = 15
 
