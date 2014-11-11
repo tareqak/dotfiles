@@ -76,6 +76,7 @@ set wildmode=longest:full
 set wildmenu
 
 let mapleader = " "
+
 " Y now copies everything up to the end of the line
 nmap Y y$
 
