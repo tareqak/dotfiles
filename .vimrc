@@ -2,24 +2,29 @@ set nocompatible
 filetype off
 filetype plugin indent off
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.vim/bundle/Vundle.vim/
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
-Bundle 'gmarik/vundle'
-Bundle 'altercation/vim-colors-solarized'
-Bundle 'bling/vim-airline'
-Bundle 'godlygeek/tabular'
-Bundle 'jeffkreeftmeijer/vim-numbertoggle'
-Bundle 'jistr/vim-nerdtree-tabs'
-Bundle 'mhinz/vim-signify'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'scrooloose/nerdtree'
-Bundle 'scrooloose/syntastic'
-Bundle 'tpope/vim-surround'
-Bundle 'wincent/Command-T'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'Raimondi/delimitMate'
-Bundle 'Valloric/YouCompleteMe'
+" Plugins
+Plugin 'bling/vim-airline'
+Plugin 'godlygeek/tabular'
+Plugin 'jeffkreeftmeijer/vim-numbertoggle'
+Plugin 'jistr/vim-nerdtree-tabs'
+Plugin 'mhinz/vim-signify'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-surround'
+Plugin 'wincent/Command-T'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'Raimondi/delimitMate'
+Plugin 'Valloric/YouCompleteMe'
+
+" Color schemes
+Plugin 'altercation/vim-colors-solarized'
+
+call vundle#end()
 
 syntax on
 filetype plugin indent on
@@ -34,8 +39,6 @@ set background=dark
 colorscheme solarized
 
 au BufNewFile * set fileformat=unix encoding=utf-8
-
-autocmd FileType go autocmd BufWritePre <buffer> Fmt
 
 set backspace=indent,eol,start
 
@@ -90,16 +93,6 @@ nmap <silent> <S-Down> :wincmd j<CR>
 nmap <silent> <S-Left> :wincmd h<CR>
 nmap <silent> <S-Right> :wincmd l<CR>
 
-" Disable arrow keys in vim
-"noremap  <Up> ""
-"noremap! <Up> <Esc>
-"noremap  <Down> ""
-"noremap! <Down> <Esc>
-"noremap  <Left> ""
-"noremap! <Left> <Esc>
-"noremap  <Right> ""
-"noremap! <Right> <Esc>
-
 set clipboard=unnamed
 
 "nmap <F8> :TagbarToggle<CR>
@@ -115,8 +108,6 @@ let g:syntastic_auto_loc_list       = 1
 let g:syntastic_check_on_open       = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
-"let g:syntastic_cpp_checkers = ['ycm']
-"let g:syntastic_c_checkers = ['ycm']
 
 let g:nerdtree_tabs_open_on_gui_startup = 0
 
@@ -124,13 +115,11 @@ let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
 let g:html_indent_style1  = "inc"
 
-"let g:nodejs_complete_config = {'max_node_compl_len': 100,}
-
-"let g:ycm_collect_identifiers_from_tags_files = 1
-let g:ycm_confirm_extra_conf                  = 0
+let g:ycm_confirm_extra_conf = 0
 
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "solarized"
 let g:airline#extensions#tabline#enabled = 1
 
 let g:CommandTMaxHeight = 15
+
