@@ -10,10 +10,8 @@ Plugin 'gmarik/Vundle.vim'
 Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'mhinz/vim-signify'
 Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-surround'
 Plugin 'Lokaltog/vim-easymotion'
@@ -104,14 +102,10 @@ vnoremap <leader>a= :Tabularize /=<CR>
 nnoremap <leader>a: :Tabularize /:\zs<CR>
 vnoremap <leader>a: :Tabularize /:\zs<CR>
 
-map <leader>n <plug>NERDTreeTabsToggle<CR>
-
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
-
-let g:nerdtree_tabs_open_on_gui_startup = 0
 
 let g:html_indent_inctags = "html,body,head,tbody"
 let g:html_indent_script1 = "inc"
