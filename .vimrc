@@ -107,10 +107,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
 
-let g:html_indent_inctags = "html,body,head,tbody"
-let g:html_indent_script1 = "inc"
-let g:html_indent_style1  = "inc"
-
 let g:ycm_confirm_extra_conf = 0
 
 let g:airline_powerline_fonts = 1
