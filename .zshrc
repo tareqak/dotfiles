@@ -52,10 +52,12 @@ alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 
 . ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-. /usr/local/etc/profile.d/z.sh
 
-. /usr/local/Cellar/git/2.1.3/etc/bash_completion.d/git-prompt.sh
+. /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 precmd () { __git_ps1 "" "$ " "(%s) " }
 
+unalias run-help
+autoload run-help
+HELPDIR=/usr/local/share/zsh/help

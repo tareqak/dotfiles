@@ -4,7 +4,7 @@ filetype plugin indent off
 
 set rtp+=~/.vim/bundle/Vundle.vim/
 call vundle#begin()
-Plugin 'gmarik/Vundle.vim'
+Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
 Plugin 'bling/vim-airline'
@@ -19,6 +19,7 @@ Plugin 'tpope/vim-vinegar'
 Plugin 'Lokaltog/vim-easymotion'
 Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'vim-scripts/dbext.vim'
 
 " Color schemes
 Plugin 'altercation/vim-colors-solarized'
@@ -61,8 +62,8 @@ set ttyfast
 set cursorline
 set mouse=a
 
-set sts=2
-set sw=2
+set sts=4
+set sw=4
 set expandtab
 set wrap
 set textwidth=79
