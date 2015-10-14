@@ -38,5 +38,9 @@ export PROMPT_COMMAND
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh
+
 eval $(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)
 # vim: set tw=0:

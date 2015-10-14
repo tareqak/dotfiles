@@ -11,13 +11,15 @@ Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'kien/ctrlp.vim'
+Plugin 'Lokaltog/vim-easymotion'
 Plugin 'mhinz/vim-signify'
+Plugin 'Raimondi/delimitMate'
+Plugin 'rdnetto/YCM-Generator'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
-Plugin 'Lokaltog/vim-easymotion'
-Plugin 'Raimondi/delimitMate'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'vim-scripts/dbext.vim'
 
@@ -95,6 +97,8 @@ nmap <silent> <S-Left> :wincmd h<CR>
 nmap <silent> <S-Right> :wincmd l<CR>
 
 set clipboard=unnamed
+
+set tabpagemax=100
 
 " For vim-airline
 set laststatus=2

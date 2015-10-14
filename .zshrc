@@ -14,7 +14,12 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-setopt histignorealldups sharehistory
+fpath=(/usr/local/share/zsh-completions $fpath)
+
+setopt hist_ignore_all_dups
+setopt hist_save_no_dups
+setopt share_history
+#setopt ignore_eof
 
 bindkey -e
 
@@ -22,10 +27,12 @@ bindkey -e
 bindkey "\e[A" history-beginning-search-backward
 bindkey "\e[B" history-beginning-search-forward
 
-# Keep 1000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=10000
-SAVEHIST=10000
+# Keep 250000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=250000
+SAVEHIST=250000
 HISTFILE=~/.zsh_history
+
+eval "$(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)"
 
 # Use modern completion system
 autoload -Uz compinit
@@ -36,17 +43,17 @@ zstyle ':completion:*' completer _expand _complete _correct _approximate
 zstyle ':completion:*' format 'Completing %d'
 zstyle ':completion:*' group-name ''
 zstyle ':completion:*' menu select=2
-eval "$(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)"
 zstyle ':completion:*:default' list-colors ${(s.:.)LS_COLORS}
 zstyle ':completion:*' list-colors ''
 zstyle ':completion:*' list-prompt %SAt %p: Hit TAB for more, or the character to insert%s
 zstyle ':completion:*' matcher-list '' 'm:{a-z}={A-Z}' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=* l:|=*'
 zstyle ':completion:*' menu select=long
 zstyle ':completion:*' select-prompt %SScrolling active: current selection at %p%s
-zstyle ':completion:*' use-compctl false
+zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+zstyle ':completion:*' rehash true
 
 alias ls="ls -F --color=auto"
 alias grep="grep --color=auto"
@@ -57,6 +64,10 @@ alias grep="grep --color=auto"
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 precmd () { __git_ps1 "" "$ " "(%s) " }
+
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/src
+source /usr/local/bin/virtualenvwrapper.sh
 
 unalias run-help
 autoload run-help
