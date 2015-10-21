@@ -11,13 +11,15 @@ Plugin 'bling/vim-airline'
 Plugin 'godlygeek/tabular'
 Plugin 'jeffkreeftmeijer/vim-numbertoggle'
 Plugin 'kien/ctrlp.vim'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'mhinz/vim-signify'
 Plugin 'Raimondi/delimitMate'
 Plugin 'rdnetto/YCM-Generator'
+Plugin 'rhysd/vim-clang-format'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
 Plugin 'tpope/vim-vinegar'
 Plugin 'Valloric/YouCompleteMe'
@@ -100,23 +102,25 @@ set clipboard=unnamed
 
 set tabpagemax=100
 
-" For vim-airline
-set laststatus=2
+nmap <F8> :TagbarToggle<CR>
 
-"nmap <F8> :TagbarToggle<CR>
-
+" Tabularize
 nnoremap <leader>a= :Tabularize /=<CR>
 vnoremap <leader>a= :Tabularize /=<CR>
 nnoremap <leader>a: :Tabularize /:\zs<CR>
 vnoremap <leader>a: :Tabularize /:\zs<CR>
 
+" Syntastic
 let g:syntastic_auto_loc_list = 1
 let g:syntastic_check_on_open = 1
 let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
 
+" YCM
 let g:ycm_confirm_extra_conf = 0
 
+" Airline
+set laststatus=2
 let g:airline_powerline_fonts = 1
 let g:airline_theme = "solarized"
 let g:airline#extensions#tabline#enabled = 1
@@ -132,3 +136,9 @@ let g:ctrlp_custom_ignore = {
   \ 'dir':  '\v[\/]\.(git|hg|svn)$',
   \ 'file': '\v\.(exe|so|dll)$',
   \ }
+
+" vim-clang-format
+let g:clang_format#detect_style_file = 1
+let g:clang_format#auto_format = 1
+let g:clang_format#auto_format_on_insert_leave = 1
+let g:clang_format#auto_formatexpr = 1
