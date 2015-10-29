@@ -18,6 +18,7 @@ Plugin 'rdnetto/YCM-Generator'
 Plugin 'rhysd/vim-clang-format'
 Plugin 'scrooloose/nerdcommenter'
 Plugin 'scrooloose/syntastic'
+Plugin 'tmhedberg/matchit'
 Plugin 'tpope/vim-fugitive'
 Plugin 'tpope/vim-repeat'
 Plugin 'tpope/vim-surround'
@@ -118,6 +119,7 @@ let g:syntastic_tex_checkers = ['chktex']
 
 " YCM
 let g:ycm_confirm_extra_conf = 0
+map <C-]> :YcmCompleter GoTo<CR>
 
 " Airline
 set laststatus=2
