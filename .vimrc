@@ -1,35 +1,7 @@
 set nocompatible
-filetype off
-filetype plugin indent off
 
-set rtp+=~/.vim/bundle/Vundle.vim/
-call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-
-" Plugins
-Plugin 'bling/vim-airline'
-Plugin 'godlygeek/tabular'
-Plugin 'jeffkreeftmeijer/vim-numbertoggle'
-Plugin 'kien/ctrlp.vim'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'mhinz/vim-signify'
-Plugin 'Raimondi/delimitMate'
-Plugin 'rdnetto/YCM-Generator'
-Plugin 'rhysd/vim-clang-format'
-Plugin 'scrooloose/nerdcommenter'
-Plugin 'scrooloose/syntastic'
-Plugin 'tmhedberg/matchit'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-repeat'
-Plugin 'tpope/vim-surround'
-Plugin 'tpope/vim-vinegar'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'vim-scripts/dbext.vim'
-
-" Color schemes
-Plugin 'altercation/vim-colors-solarized'
-
-call vundle#end()
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+execute pathogen#infect()
 
 syntax on
 filetype plugin indent on
