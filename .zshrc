@@ -14,7 +14,7 @@ autoload -Uz promptinit
 promptinit
 prompt walters
 
-fpath=(/usr/local/share/zsh-completions $fpath)
+fpath=(~/dotfiles/zsh-completions $fpath)
 
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups

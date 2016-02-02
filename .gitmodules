@@ -14,3 +14,6 @@
 	path = zsh-syntax-highlighting
 	url = https://github.com/zsh-users/zsh-syntax-highlighting.git
 	branch = master
+[submodule "zsh-completions"]
+	path = zsh-completions
+	url = git://github.com/zsh-users/zsh-completions.git
