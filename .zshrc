@@ -65,10 +65,6 @@ GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 precmd () { __git_ps1 "" "$ " "(%s) " }
 
-export WORKON_HOME=$HOME/.virtualenvs
-export PROJECT_HOME=$HOME/src
-source /usr/local/bin/virtualenvwrapper_lazy.sh
-
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
