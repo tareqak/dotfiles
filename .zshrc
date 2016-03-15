@@ -68,3 +68,5 @@ precmd () { __git_ps1 "" "$ " "(%s) " }
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
+
+. ~/dotfiles/z/z.sh
