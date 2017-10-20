@@ -26,10 +26,6 @@
 	path = .vim/bundle/YouCompleteMe
 	url = https://github.com/Valloric/YouCompleteMe.git
 	branch = master
-[submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/kien/ctrlp.vim.git
-	branch = master
 [submodule ".vim/bundle/dbext.vim"]
 	path = .vim/bundle/dbext.vim
 	url = https://github.com/vim-scripts/dbext.vim.git
@@ -109,4 +105,56 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z.git
+	branch = master
+[submodule "ctrlp.vim"]
+	path = ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+	branch = master
+[submodule "rainbow_parentheses.vim"]
+	path = rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim
+	branch = master
+[submodule ".vim/bundle/--force"]
+	path = .vim/bundle/--force
+	url = https://github.com/kien/rainbow_parentheses.vim
+	branch = master
+[submodule ".vim/bundle/rainbow_parentheses.vim"]
+	path = .vim/bundle/rainbow_parentheses.vim
+	url = https://github.com/kien/rainbow_parentheses.vim
+	branch = master
+[submodule ".vim/bundle/ctrlp.vim"]
+	path = .vim/bundle/ctrlp.vim
+	url = https://github.com/ctrlpvim/ctrlp.vim
+	branch = master
+[submodule ".vim/bundle/syntastic-local-eslint.vim"]
+	path = .vim/bundle/syntastic-local-eslint.vim
+	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
+	branch = master
+[submodule ".vim/bundle/thrift.vim"]
+	path = .vim/bundle/thrift.vim
+	url = https://github.com/solarnz/thrift.vim
+	branch = master
+[submodule ".vim/bundle/vim-scala"]
+	path = .vim/bundle/vim-scala
+	url = https://github.com/derekwyatt/vim-scala.git
+	branch = master
+[submodule "intellij-colors-solarized"]
+	path = intellij-colors-solarized
+	url = https://github.com/jkaving/intellij-colors-solarized
+	branch = master
+[submodule "vim-abolish"]
+	path = vim-abolish
+	url = https://github.com/tpope/vim-abolish
+	branch = master
+[submodule ".vim/bundle/vim-abolish"]
+	path = .vim/bundle/vim-abolish
+	url = https://github.com/tpope/vim-abolish
+	branch = master
+[submodule ".vim/bundle/vim-table-mode"]
+	path = .vim/bundle/vim-table-mode
+	url = https://github.com/dhruvasagar/vim-table-mode
+	branch = master
+[submodule "auto-fu.zsh"]
+	path = auto-fu.zsh
+	url = https://github.com/HerringtonDarkholme/auto-fu.zsh
 	branch = master
