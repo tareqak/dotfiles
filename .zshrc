@@ -10,6 +10,8 @@ export MANPATH
 
 export EDITOR="/usr/local/bin/vim"
 
+export GPG_TTY=$(tty)
+
 autoload -Uz promptinit
 promptinit
 prompt walters
