@@ -66,6 +66,8 @@ set backup
 set undofile
 set undoreload=10000
 
+set spell spelllang=en_ca
+
 nmap <silent> <S-Up> :wincmd k<CR>
 nmap <silent> <S-Down> :wincmd j<CR>
 nmap <silent> <S-Left> :wincmd h<CR>
