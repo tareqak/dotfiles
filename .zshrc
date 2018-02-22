@@ -1,6 +1,7 @@
 PATH="$PATH"
 PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
 PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
+PATH="/usr/local/opt/python/libexec/bin:$PATH"
 PATH="~/bin:$PATH"
 export PATH
 
