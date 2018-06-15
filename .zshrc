@@ -1,39 +1,32 @@
-PATH="$PATH"
-PATH="/usr/local/opt/coreutils/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/gnu-sed/libexec/gnubin:$PATH"
-PATH="/usr/local/opt/python/libexec/bin:$PATH"
-PATH="~/bin:$PATH"
-export PATH
-
-MANPATH="/usr/local/opt/coreutils/libexec/gnuman:$MANPATH"
-MANPATH="/usr/local/opt/gnu-sed/libexec/gnuman:$MANPATH"
-export MANPATH
-
-export EDITOR="/usr/local/bin/vim"
-
-export GPG_TTY=$(tty)
-
 autoload -Uz promptinit
 promptinit
-prompt walters
 
 fpath=(~/dotfiles/zsh-completions $fpath)
 
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt share_history
-#setopt ignore_eof
+# Keep 250000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=250000
+SAVEHIST=250000
+HISTFILE=~/.zsh_history
 
+#setopt ignore_eof
 bindkey -e
+
+DIRSTACKSIZE=16
+#setopt auto_pushd
+setopt pushd_ignore_dups
+#setopt pushd_minus
+
+setopt noflowcontrol
 
 # like readline's history-search-backward and history-search forward
 bindkey "\e[A" history-beginning-search-backward
 bindkey "\e[B" history-beginning-search-forward
 
-# Keep 250000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=250000
-SAVEHIST=250000
-HISTFILE=~/.zsh_history
+bindkey "\C-b" backward-word
+bindkey "\C-f" forward-word
 
 eval "$(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)"
 
@@ -56,17 +49,33 @@ zstyle ':completion:*' use-compctl true
 zstyle ':completion:*' verbose true
 zstyle ':completion:*:*:kill:*:processes' list-colors '=(#b) #([0-9]#)*=0=01;31'
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
+
 zstyle ':completion:*' rehash true
 
-alias ls="ls -F --color=auto"
-alias grep="grep --color=auto"
+# Aliases
+alias cp='cp -iv'
+alias rcp='rsync -v --progress'
+alias rmv='rsync -v --progress --remove-source-files'
+alias mv='mv -iv'
+alias rm='rm -iv'
+alias rmdir='rmdir -v'
+alias ln='ln -v'
+alias chmod="chmod -c"
+alias chown="chown -c"
+alias mkdir="mkdir -v"
+
+alias grep='grep --colour=auto'
+alias egrep='egrep --colour=auto'
+alias ls='ls --color=auto --human-readable --group-directories-first --classify'
+#alias ls="ls -F --color=auto"
+#alias grep="grep --color=auto"
 
 . ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 . /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
-precmd () { __git_ps1 "" "$ " "(%s) " }
+precmd () { __git_ps1 "" $'%D{%Y%m%d%a %T.%6.} %F{green}%0~%f\n$ ' "(%s) " }
 
 unalias run-help
 autoload run-help

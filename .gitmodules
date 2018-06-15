@@ -2,10 +2,6 @@
 	path = solarized
 	url = https://github.com/altercation/solarized
 	branch = master
-[submodule "powerline-fonts"]
-	path = powerline-fonts
-	url = https://github.com/Lokaltog/powerline-fonts.git
-	branch = master
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
@@ -18,143 +14,43 @@
 	path = zsh-completions
 	url = git://github.com/zsh-users/zsh-completions.git
 	branch = master
-[submodule ".vim/bundle/YCM-Generator"]
-	path = .vim/bundle/YCM-Generator
-	url = https://github.com/rdnetto/YCM-Generator.git
-	branch = master
-[submodule ".vim/bundle/YouCompleteMe"]
-	path = .vim/bundle/YouCompleteMe
-	url = https://github.com/Valloric/YouCompleteMe.git
-	branch = master
-[submodule ".vim/bundle/dbext.vim"]
-	path = .vim/bundle/dbext.vim
-	url = https://github.com/vim-scripts/dbext.vim.git
-	branch = master
-[submodule ".vim/bundle/delimitMate"]
-	path = .vim/bundle/delimitMate
-	url = https://github.com/Raimondi/delimitMate.git
-	branch = master
-[submodule ".vim/bundle/matchit"]
-	path = .vim/bundle/matchit
-	url = https://github.com/tmhedberg/matchit.git
-	branch = master
-[submodule ".vim/bundle/nerdcommenter"]
-	path = .vim/bundle/nerdcommenter
-	url = https://github.com/scrooloose/nerdcommenter.git
-	branch = master
-[submodule ".vim/bundle/syntastic"]
-	path = .vim/bundle/syntastic
-	url = https://github.com/scrooloose/syntastic.git
-	branch = master
-[submodule ".vim/bundle/tabular"]
-	path = .vim/bundle/tabular
-	url = https://github.com/godlygeek/tabular.git
-	branch = master
-[submodule ".vim/bundle/vim-airline"]
-	path = .vim/bundle/vim-airline
-	url = https://github.com/bling/vim-airline.git
-	branch = master
-[submodule ".vim/bundle/vim-clang-format"]
-	path = .vim/bundle/vim-clang-format
-	url = https://github.com/rhysd/vim-clang-format.git
-	branch = master
-[submodule ".vim/bundle/vim-colors-solarized"]
-	path = .vim/bundle/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized.git
-	branch = master
-[submodule ".vim/bundle/vim-easymotion"]
-	path = .vim/bundle/vim-easymotion
-	url = https://github.com/easymotion/vim-easymotion.git
-	branch = master
-[submodule ".vim/bundle/vim-fugitive"]
-	path = .vim/bundle/vim-fugitive
-	url = https://github.com/tpope/vim-fugitive.git
-	branch = master
-[submodule ".vim/bundle/vim-nerdtree-tabs"]
-	path = .vim/bundle/vim-nerdtree-tabs
-	url = https://github.com/jistr/vim-nerdtree-tabs.git
-	branch = master
-[submodule ".vim/bundle/vim-numbertoggle"]
-	path = .vim/bundle/vim-numbertoggle
-	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle.git
-	branch = master
-[submodule ".vim/bundle/vim-pathogen"]
-	path = .vim/bundle/vim-pathogen
-	url = https://github.com/tpope/vim-pathogen
-	branch = master
-[submodule ".vim/bundle/vim-repeat"]
-	path = .vim/bundle/vim-repeat
-	url = https://github.com/tpope/vim-repeat.git
-	branch = master
-[submodule ".vim/bundle/vim-signify"]
-	path = .vim/bundle/vim-signify
-	url = https://github.com/mhinz/vim-signify.git
-	branch = master
-[submodule ".vim/bundle/vim-surround"]
-	path = .vim/bundle/vim-surround
-	url = https://github.com/tpope/vim-surround.git
-	branch = master
-[submodule ".vim/bundle/vim-vinegar"]
-	path = .vim/bundle/vim-vinegar
-	url = https://github.com/tpope/vim-vinegar.git
-	branch = master
-[submodule ".vim/bundle/vim-airline-themes"]
-	path = .vim/bundle/vim-airline-themes
-	url = https://github.com/vim-airline/vim-airline-themes
-	branch = master
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z.git
-	branch = master
-[submodule "ctrlp.vim"]
-	path = ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
-	branch = master
-[submodule "rainbow_parentheses.vim"]
-	path = rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim
-	branch = master
-[submodule ".vim/bundle/--force"]
-	path = .vim/bundle/--force
-	url = https://github.com/kien/rainbow_parentheses.vim
-	branch = master
-[submodule ".vim/bundle/rainbow_parentheses.vim"]
-	path = .vim/bundle/rainbow_parentheses.vim
-	url = https://github.com/kien/rainbow_parentheses.vim
-	branch = master
-[submodule ".vim/bundle/ctrlp.vim"]
-	path = .vim/bundle/ctrlp.vim
-	url = https://github.com/ctrlpvim/ctrlp.vim
-	branch = master
-[submodule ".vim/bundle/syntastic-local-eslint.vim"]
-	path = .vim/bundle/syntastic-local-eslint.vim
-	url = https://github.com/mtscout6/syntastic-local-eslint.vim.git
-	branch = master
-[submodule ".vim/bundle/thrift.vim"]
-	path = .vim/bundle/thrift.vim
-	url = https://github.com/solarnz/thrift.vim
-	branch = master
-[submodule ".vim/bundle/vim-scala"]
-	path = .vim/bundle/vim-scala
-	url = https://github.com/derekwyatt/vim-scala.git
 	branch = master
 [submodule "intellij-colors-solarized"]
 	path = intellij-colors-solarized
 	url = https://github.com/jkaving/intellij-colors-solarized
 	branch = master
-[submodule "vim-abolish"]
-	path = vim-abolish
-	url = https://github.com/tpope/vim-abolish
+[submodule ".vim/pack/tareqak/start/vim-colors-solarized"]
+	path = .vim/pack/tareqak/start/vim-colors-solarized
+	url = https://github.com/altercation/vim-colors-solarized
 	branch = master
-[submodule ".vim/bundle/vim-abolish"]
-	path = .vim/bundle/vim-abolish
-	url = https://github.com/tpope/vim-abolish
+[submodule ".vim/pack/tareqak/start/nerdcommenter"]
+	path = .vim/pack/tareqak/start/nerdcommenter
+	url = https://github.com/scrooloose/nerdcommenter
 	branch = master
-[submodule ".vim/bundle/vim-table-mode"]
-	path = .vim/bundle/vim-table-mode
-	url = https://github.com/dhruvasagar/vim-table-mode
+[submodule ".vim/pack/tareqak/start/vim-signify"]
+	path = .vim/pack/tareqak/start/vim-signify
+	url = https://github.com/mhinz/vim-signify
 	branch = master
-[submodule "auto-fu.zsh"]
-	path = auto-fu.zsh
-	url = https://github.com/HerringtonDarkholme/auto-fu.zsh
+[submodule ".vim/pack/tareqak/start/syntastic"]
+	path = .vim/pack/tareqak/start/syntastic
+	url = https://github.com/vim-syntastic/syntastic
+	branch = master
+[submodule ".vim/pack/tareqak/start/tabular"]
+	path = .vim/pack/tareqak/start/tabular
+	url = https://github.com/godlygeek/tabular
+	branch = master
+[submodule ".vim/pack/tareqak/start/vim-airline"]
+	path = .vim/pack/tareqak/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
+	branch = master
+[submodule ".vim/pack/tareqak/start/vim-airline-themes"]
+	path = .vim/pack/tareqak/start/vim-airline-themes
+	url = https://github.com/vim-airline/vim-airline-themes
+	branch = master
+[submodule ".vim/pack/tareqak/start/vim-numbertoggle"]
+	path = .vim/pack/tareqak/start/vim-numbertoggle
+	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
 	branch = master

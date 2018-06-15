@@ -1,8 +1,5 @@
 set nocompatible
 
-runtime bundle/vim-pathogen/autoload/pathogen.vim
-execute pathogen#infect()
-
 syntax on
 filetype plugin indent on
 
@@ -66,7 +63,7 @@ set backup
 set undofile
 set undoreload=10000
 
-set spell spelllang=en_ca
+set spell spelllang=en_us
 
 nmap <silent> <S-Up> :wincmd k<CR>
 nmap <silent> <S-Down> :wincmd j<CR>
@@ -92,33 +89,10 @@ let g:syntastic_javascript_checkers = ['jshint']
 let g:syntastic_tex_checkers = ['chktex']
 
 " YCM
-let g:ycm_confirm_extra_conf = 0
-map <C-]> :YcmCompleter GoTo<CR>
 
 " Airline
 set laststatus=2
-let g:airline_powerline_fonts = 1
+let g:airline_powerline_fonts = 0
 let g:airline_theme = "solarized"
 let g:airline#extensions#tabline#enabled = 1
 
-" CtrlP
-let g:ctrlp_map = '<c-p>'
-let g:ctrlp_cmd = 'CtrlP'
-let g:ctrlp_working_path_mode = 'ra'
-let g:ctrlp_prompt_mappings = {
-  \ 'AcceptSelection("e")': [],
-  \ 'AcceptSelection("t")': ['<cr>', '<c-m>'],
-  \ }
-
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip
-
-let g:ctrlp_custom_ignore = {
-  \ 'dir':  '\v[\/]\.(git|hg|svn)$',
-  \ 'file': '\v\.(exe|so|dll)$',
-  \ }
-
-" vim-clang-format
-let g:clang_format#detect_style_file = 1
-let g:clang_format#auto_format = 1
-let g:clang_format#auto_format_on_insert_leave = 1
-let g:clang_format#auto_formatexpr = 1
