@@ -3,3 +3,5 @@
 .vim/tmp/undo/*
 .vim/.netrwhist
 .DS_Store
+.netrc
+
