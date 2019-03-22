@@ -10,7 +10,8 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 
 set t_Co=256
 set background=dark
-colorscheme solarized
+packadd! onedark.vim
+colorscheme onedark
 
 au BufNewFile * set fileformat=unix encoding=utf-8
 
@@ -43,6 +44,10 @@ set wrap
 set textwidth=79
 set colorcolumn=80
 set number
+
+if has('mouse_sgr')
+    set ttymouse=sgr
+endif
 
 autocmd BufEnter * sign define dm
 autocmd BufEnter * execute 'sign place 9999 line=1 name=dm buffer=' . bufnr('')
@@ -93,6 +98,6 @@ let g:syntastic_tex_checkers = ['chktex']
 " Airline
 set laststatus=2
 let g:airline_powerline_fonts = 0
-let g:airline_theme = "solarized"
+let g:airline_theme = "onedark"
 let g:airline#extensions#tabline#enabled = 1
 

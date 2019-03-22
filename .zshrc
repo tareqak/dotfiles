@@ -6,9 +6,9 @@ fpath=(~/dotfiles/zsh-completions $fpath)
 setopt hist_ignore_all_dups
 setopt hist_save_no_dups
 setopt share_history
-# Keep 250000 lines of history within the shell and save it to ~/.zsh_history:
-HISTSIZE=250000
-SAVEHIST=250000
+# Keep 25000 lines of history within the shell and save it to ~/.zsh_history:
+HISTSIZE=25000
+SAVEHIST=25000
 HISTFILE=~/.zsh_history
 
 #setopt ignore_eof
@@ -28,7 +28,7 @@ bindkey "\e[B" history-beginning-search-forward
 bindkey "\C-b" backward-word
 bindkey "\C-f" forward-word
 
-eval "$(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.256dark)"
+eval "$(dircolors -b ~/dotfiles/dircolors-solarized/dircolors.ansi-dark)"
 
 # Use modern completion system
 autoload -Uz compinit
@@ -75,10 +75,13 @@ alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 . /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
-precmd () { __git_ps1 "" $'%D{%Y%m%d%a %T.%6.} %F{green}%0~%f\n$ ' "(%s) " }
+precmd () { __git_ps1 "" $'%D{%Y%m%d%a %T.%6.}\n%F{green}%0~%f\n$ ' "(%s) " }
 
 unalias run-help
 autoload run-help
 HELPDIR=/usr/local/share/zsh/help
 
 . ~/dotfiles/z/z.sh
+
+# vim: set ts=2:
+

@@ -1,7 +1,3 @@
-[submodule "solarized"]
-	path = solarized
-	url = https://github.com/altercation/solarized
-	branch = master
 [submodule "dircolors-solarized"]
 	path = dircolors-solarized
 	url = https://github.com/seebi/dircolors-solarized.git
@@ -17,14 +13,6 @@
 [submodule "z"]
 	path = z
 	url = https://github.com/rupa/z.git
-	branch = master
-[submodule "intellij-colors-solarized"]
-	path = intellij-colors-solarized
-	url = https://github.com/jkaving/intellij-colors-solarized
-	branch = master
-[submodule ".vim/pack/tareqak/start/vim-colors-solarized"]
-	path = .vim/pack/tareqak/start/vim-colors-solarized
-	url = https://github.com/altercation/vim-colors-solarized
 	branch = master
 [submodule ".vim/pack/tareqak/start/nerdcommenter"]
 	path = .vim/pack/tareqak/start/nerdcommenter
@@ -53,4 +41,12 @@
 [submodule ".vim/pack/tareqak/start/vim-numbertoggle"]
 	path = .vim/pack/tareqak/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
+	branch = master
+[submodule ".vim/pack/tareqak/start/onedark.vim"]
+	path = .vim/pack/tareqak/start/onedark.vim
+	url = https://github.com/joshdick/onedark.vim
+	branch = master
+[submodule ".vim/pack/tareqak/start/vim-polyglot"]
+	path = .vim/pack/tareqak/start/vim-polyglot
+	url = https://github.com/sheerun/vim-polyglot
 	branch = master
