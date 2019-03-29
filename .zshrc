@@ -83,5 +83,9 @@ HELPDIR=/usr/local/share/zsh/help
 
 . ~/dotfiles/z/z.sh
 
-# vim: set ts=2:
+if [ -e ~/.zshrc_local ]; then
+  . ~/.zshrc_local
+fi
+
+# vim: set sts=2:
 
