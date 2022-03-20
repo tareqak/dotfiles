@@ -8,7 +8,7 @@
 	branch = master
 [submodule "zsh-completions"]
 	path = zsh-completions
-	url = git://github.com/zsh-users/zsh-completions.git
+	url = https://github.com/zsh-users/zsh-completions.git
 	branch = master
 [submodule "z"]
 	path = z
