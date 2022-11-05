@@ -30,10 +30,6 @@
 	path = .vim/pack/tareqak/start/tabular
 	url = https://github.com/godlygeek/tabular
 	branch = master
-[submodule ".vim/pack/tareqak/start/vim-airline"]
-	path = .vim/pack/tareqak/start/vim-airline
-	url = https://github.com/vim-airline/vim-airline
-	branch = master
 [submodule ".vim/pack/tareqak/start/vim-airline-themes"]
 	path = .vim/pack/tareqak/start/vim-airline-themes
 	url = https://github.com/vim-airline/vim-airline-themes
@@ -41,12 +37,16 @@
 [submodule ".vim/pack/tareqak/start/vim-numbertoggle"]
 	path = .vim/pack/tareqak/start/vim-numbertoggle
 	url = https://github.com/jeffkreeftmeijer/vim-numbertoggle
-	branch = master
+	branch = main
 [submodule ".vim/pack/tareqak/start/onedark.vim"]
 	path = .vim/pack/tareqak/start/onedark.vim
 	url = https://github.com/joshdick/onedark.vim
-	branch = master
+	branch = main
 [submodule ".vim/pack/tareqak/start/vim-polyglot"]
 	path = .vim/pack/tareqak/start/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
+	branch = master
+[submodule ".vim/pack/tareqak/start/vim-airline"]
+	path = .vim/pack/tareqak/start/vim-airline
+	url = https://github.com/vim-airline/vim-airline
 	branch = master

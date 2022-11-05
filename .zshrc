@@ -74,7 +74,8 @@ alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 
 . ~/dotfiles/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-. /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
+. /usr/share/git/completion/git-prompt.sh
+#. /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
 precmd () { __git_ps1 "" $'%D{%Y%m%d%a %T.%6.}\n%F{green}%0~%f\n' "(%s) " }
