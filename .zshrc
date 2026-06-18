@@ -1,6 +1,8 @@
+#zmodload zsh/zprof
 autoload -Uz promptinit
 promptinit
 
+typeset -U fpath
 fpath=(~/dotfiles/zsh-completions $fpath)
 
 setopt hist_ignore_all_dups
@@ -78,7 +80,21 @@ alias ls='ls --color=auto --human-readable --group-directories-first --classify'
 #. /usr/local/Cellar/git/*/etc/bash_completion.d/git-prompt.sh
 GIT_PS1_SHOWDIRTYSTATE=1
 GIT_PS1_SHOWSTASHSTATE=1
-precmd () { __git_ps1 "" $'%D{%Y%m%d%a %T.%6.}\n%F{green}%0~%f\n' "(%s) " }
+
+#preexec () {
+  #cmd_start_time=$(date "+%s")
+#}
+
+precmd () {
+  #if (($+cmd_start_time)); then
+    #stop=$(date "+%s")
+    #elapsed=$((stop - cmd_start_time))
+  #fi
+  __git_ps1 "" $'%D{%Y%m%d%a %T.%6.}\n[%?] %F{green}%0~%f\n' "(%s) "
+  #unset cmd_start_time
+  #unset stop
+  #unset elapsed
+}
 
 unalias run-help
 autoload run-help
@@ -97,5 +113,5 @@ if [ -e ~/.zshrc_local ]; then
   . ~/.zshrc_local
 fi
 
+#zprof
 # vim: set sts=2:
-
